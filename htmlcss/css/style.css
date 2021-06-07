@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.m-b{
+    margin-bottom: 40px;
+}
+.m-bc{
+    margin-bottom: 15px;
+}
+.m-l{
+    margin-left: 15px;
+}
+a{
+    color:white;
+}
+p{
+    font-weight:400 ;
+    font-size: 15px;
+}
+h1{
+    font-weight: 400;
+}
+.logo{
+    background-image:url(../img/logo.svg) ;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;   
+}
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy{
+    margin-left: 122px;
+}
+nav ul{
+    float:right;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    height: calc(100vh - 80px);
+    align-items: flex-end;  
+}
+.content-left{
+    width: 40%;
+    color: white;
+}
+main h1{
+    font-size:42x;
+}
+.boxes{
+    margin-top:20px;
+    width: 75%;
+    margin:50px auto;
+}   
+
+.cards{
+    width:30%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#tarjeta .cards img{
+    padding-bottom: 20px;
+}
+
+.titulo{
+    text-align:"center";
+    width: 50%;
+    margin:0 auto;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cabecera{
+    text-align: center;
+}
+#tarjetaimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-flow:wrap ;
+
+}
+.cardimg{
+    width: 31%;
+    border:1px solid #ccc;
+}
+
+.imagen{
+    background-color: steelblue;
+    height: 150px;
+    margin-bottom: 15px;
+    display:inline-block;
+    width: 100%;
+}
+.img{
+ height:246px;
+ width: 100%;
+ display:inline;
+}
+.titcard{
+    padding-top: 40px;
+}
+.icon{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icon .li{
+    font-size:30px;
+}
+.icon :first-child{
+    padding-left: 3rem;
+    background-image: url(../img/icono_wc.svg);
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+
+}
+.icon :nth-child(2n){
+    padding-left: 3rem;
+    background-image: url(../img/icono_estacionamiento.svg);
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+
+}
+.icon :last-child{
+    padding-left: 3rem;
+    background-image: url(../img/icono_dormitorio.svg);
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+
+}
+
+.lista{
+    display: block;
+}
+.cardimg .btn{
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 20px 10px ;
+    padding: 10px 5px;
+    background:orange;
+    text-decoration:none;
+}
+
+.vertodas{
+    
+    width: 100%;
+}
+.vertodas .btntodas{
+    display:block;
+    color: #fff;
+    text-align: center;
+    margin: 20px 10px ;
+    padding: 10px 5px;
+    background:rgb(148, 243, 148);
+    text-decoration:none;
+    float: right;
+    width:120px;
+    
+}
+.foot{
+    width: 100%;
+    min-height: 43vh;
+    background-image: url(../img/encuentra.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.foot .btntodas{
+    display:block;
+    color: #fff;
+    text-align: center;
+    margin: 20px 10px ;
+    padding: 10px 5px;
+    background-color: orange;
+    text-decoration:none;
+    margin-left: 74%;
+    margin-left: 0px;
+    width: 150px;
+    font-weight: 600;
+    
+}
+.foot .contenido{
+
+   margin-left: 150px;
+    padding-top: 60px;
+
+}
+
+.navfoot{
+    width: 100%;
+    background-color: gray;
+    height: 10vh;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+#navfoot ul{
+    display: flex;
+    list-style-type: none;
+}
+#navfoot ul li a{
+    padding: 0 20px;
+    text-decoration: none;
+}
+.card-body{
+    margin:0 10px;
+}

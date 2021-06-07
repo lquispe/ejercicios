@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            float: left;
+            border: 5px solid black;
+            margin: 20px;
+        }
+    </style>
+    <div>test</div>
+    <div>test</div>
+    <div>test</div>
+    <div>test</div>
+    <script>
+
+        var divs = document.querySelectorAll('div');
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].onclick = function (e) {
+                e.target.style.backgroundColor = bgChange();
+            }
+        }
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+
+        function bgChange() {
+            var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+            return rndCol;
+        }
+     
+    </script>
+</body>
+</html>

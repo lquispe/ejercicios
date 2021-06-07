@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        var listEdades = [32, 18, 16, 38];
+
+        // propiedades
+        console.log(listEdades.length);
+
+        // métodos de los array
+        // ordena el array
+        listEdades.sort();
+        console.log(listEdades);
+
+        // saca el último elemento
+        listEdades.pop();
+        console.log(listEdades);
+
+        // pone un elemento al final
+        listEdades.push(44);
+        console.log(listEdades);
+
+        listEdades.shift();
+        console.log(listEdades);
+
+
+        // métodos con callback
+        // Método every, determinar si todos los elementos cumplen con una función
+        function esMayorEdad(edad) {
+            return edad >= 18;
+        }
+
+        //  var listEdades = [18, 32, 38];
+        var sonTodosMayores = listEdades.every(esMayorEdad); //callback es enviar una función por parámetro
+        console.log(sonTodosMayores);
+
+        // simulación del método every
+        // es solo un ejemplo de como sería el every
+        // function every(funcionExterna){
+        //     elemento1 = listEdades[0];
+        //     let esMayor = funcionExterna(elemento1);
+
+        //     elemento2 = listEdades[1];
+        //     let esMayor = funcionExterna(elemento2);
+
+        //     return elemento1 & elemento2;
+        // }
+
+        // filtra los elementos que no cumplen con la condición
+        listEdades[1] = 15;
+        console.log(listEdades);
+        console.log(listEdades.filter(esMayorEdad));
+
+        console.log(listEdades.some(esMayorEdad));
+        function esNinio(edad) {
+            return edad < 10;
+        }
+        console.log(listEdades);
+        console.log(listEdades.some(esNinio));
+
+
+        // Closures o clausulas -> POO
+        function crearSumador(x) {
+            // x toma valor 5 o 10
+            return function (y) {
+                return x + y;
+            }
+        }
+
+        var suma5 = crearSumador(5); // x toma el valor 5
+        // var suma5 = function (y) {
+        //     return 5 + y;
+        // }
+        var suma10 = crearSumador(10); // x toma el valor 10
+
+        console.log(suma5(2));
+        console.log(suma10(2));
+
+
+        /** Scope 
+         * contexto en que las variables son visibles
+        */
+        function exampleFunction() {
+            var x = "declarada dentro de la función"; // x solo se puede utilizar en exampleFunction
+            console.log("funcion interna");
+            console.log(x);
+        }
+        console.log(x); // error fuera de alcance
+
+        if (true) {
+            var z = 3;
+            let w = 4;
+        }
+        console.log(`Variable z=${z}`);
+        // console.log(`Variable w=${w}`); fuera de alcance
+
+        var y = "función externa declarada";
+        exampleFunction();
+
+        function exampleFunction() {
+            console.log("funcion interna");
+            console.log(y);
+        }
+
+        console.log("funcion externa");
+        console.log(y); // no está fuera de alcance           
+
+
+
+    </script>
+    
+</body>
+</html>

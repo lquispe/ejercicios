@@ -1,0 +1,11 @@
+every: determina si todos los elementos satisfacen una condición
+filter: filtra los elementos que cumplen con una condición
+some: si alguno cumple con la condición
+map: 
+reduce
+
+Funciones: 
+Callbacks: se envía una función como parámetro
+Closures: clausulas que asocian datos con funciones
+Scope: contexto en que las variables son visibles
+

@@ -1,0 +1,22 @@
+
+- El modelo de objeto de documento (DOM): representación estructurada del documento Html, proporciona formas de manipular este documento.
+- DOM y JS: js utiliza dom para manipular el documento html
+- Manipulación del DOM
+- Eventos en JS
+- Objetos - Iterar con for in
+- Objetos - Iterar con for of
+
+
+JavaScript puede cambiar todos los elementos HTML de la página.
+JavaScript puede cambiar todos los atributos HTML de la página.
+JavaScript puede cambiar todos los estilos CSS de la página.
+JavaScript puede eliminar elementos y atributos HTML existentes
+JavaScript puede agregar nuevos elementos y atributos HTML
+JavaScript puede reaccionar a todos los eventos HTML existentes en la página.
+JavaScript puede crear nuevos eventos HTML en la página.
+
+
+Cómo cambiar el contenido de los elementos HTML
+Cómo cambiar el estilo (CSS) de los elementos HTML
+Cómo reaccionar a los eventos DOM de HTML
+Cómo agregar y eliminar elementos HTML
